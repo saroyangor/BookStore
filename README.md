@@ -18,9 +18,7 @@
 1. Клонируем проект:
 
 ```bash
-git clone https://github.com/saroyangor/BookStore.git
-cd BookStore/client
-git clone https://github.com/saroyangor/BookStore-client.git
+git clone https://github.com/saroyangor/BookStore.git --recurse-submodules
 ```
 
 2. Запуск через Docker Compose:
