@@ -23,6 +23,7 @@ git clone https://github.com/saroyangor/BookStore.git --recurse-submodules
 
 2. Запуск через Docker Compose:
 ```bash
+cd BookStore
 docker-compose up --build -d
 ```
 
