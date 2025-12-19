@@ -1,6 +1,6 @@
 # BookStore Application
 
-Приложение **BookStore** с бэкендом на .NET Core, фронтендом и базой данных PostgreSQL, запускаемое через Docker Compose.
+Приложение **BookStore** с бэкендом на .NET Core, фронтендом на Next.js и базой данных PostgreSQL, запускаемое через Docker Compose.
 
 ## Требования
 
@@ -18,8 +18,8 @@
 1. Клонируем проект:
 
 ```bash
-git clone https://github.com/yourusername/bookstore.git
-cd bookstore
+git clone https://github.com/saroyangor/BookStore.git
+cd BookStore
 ```
 
 2. Запуск через Docker Compose:
