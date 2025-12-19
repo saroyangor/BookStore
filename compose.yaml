@@ -1,0 +1,37 @@
+﻿services:
+  backend:
+    image: bookstore.api
+    build:
+      context: .
+      dockerfile: BookStore.API/Dockerfile
+    ports:
+      - "5297:8080"
+    depends_on:
+      - postgres
+    environment:
+      - ConnectionStrings__BookStoreDbContext=Host=postgres;Database=BookStoreDb;Username=postgres;Password=postgres
+
+  postgres:
+    container_name: bookstore_postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "BookStoreDb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  
+  frontend:
+    image: bookstore.client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

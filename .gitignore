@@ -1,0 +1,67 @@
+﻿# Build Folders
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+.vscode/
+*.vscode/
+
+# DotNet specific
+*.dll
+*.exe
+*.pdb
+*.appx
+*.appxbundle
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.log
+*.vsix
+*.dbmdl
+
+# Node/npm for frontend projects (if any)
+node_modules/
+wwwroot/lib/
+
+# Azure DevOps
+*.publish.xml
+
+# User secrets (never commit!)
+secrets.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
