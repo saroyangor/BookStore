@@ -19,7 +19,8 @@
 
 ```bash
 git clone https://github.com/saroyangor/BookStore.git
-cd BookStore
+cd BookStore/client
+git clone https://github.com/saroyangor/BookStore-client.git
 ```
 
 2. Запуск через Docker Compose:
